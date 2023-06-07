@@ -19,3 +19,9 @@ header{
     font-size: 12px;
     font-weight: 700;
 }
+
+@media (max-width: 966px) {
+    .header-container-config{
+        padding: 20px;
+    }
+  }
