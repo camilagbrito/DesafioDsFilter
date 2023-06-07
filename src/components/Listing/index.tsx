@@ -2,10 +2,7 @@ import CardProduct from '../CardProduct';
 import * as productService from '../../services/product-service'
 import './style.css';
 
-
 export default function Listing(){
-
-
     return(
         <main>
             <section className='card-products-config'>
@@ -15,7 +12,6 @@ export default function Listing(){
                             product => <CardProduct key={product.id} product={product} />
                             )
                     }
-
                 </div>
             </section>
         </main>
