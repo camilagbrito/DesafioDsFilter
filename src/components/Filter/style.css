@@ -1,0 +1,36 @@
+.form-filter{
+  background-color: var(--ds-color-bg-secondary);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.max-price input, .min-price input{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid var(--ds-color-border-filter);
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--ds-color-font-secondary);
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--ds-color-placeholder);
+}
+
+.filter-button{
+    background-color: var(--ds-color-bg-tertiary);
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: var(--ds-color-font-primary);
+    font-size: 16px;
+    font-weight: 700;
+}
+

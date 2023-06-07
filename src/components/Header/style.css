@@ -1,0 +1,21 @@
+header{
+    height: 70px;
+    background-color: var(--ds-color-bg-tertiary);
+}
+
+.header-container-config{
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--ds-color-font-primary);
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 20px;
+}
+
+.qnt-products p{
+    font-size: 12px;
+    font-weight: 700;
+}

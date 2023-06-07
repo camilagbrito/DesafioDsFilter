@@ -1,0 +1,7 @@
+.listing-body-config{
+    background-color: var(--ds-color-bg-primary);
+}
+
+.container-listing-body{
+    padding: 20px;
+}
