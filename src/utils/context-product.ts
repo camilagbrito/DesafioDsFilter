@@ -9,4 +9,4 @@ export const ContextProductCount = createContext<ContextProductCountType>({
     contextProductCount: 0,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     setContextProductCount: () => {}
-})
+});
