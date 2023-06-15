@@ -6,7 +6,12 @@ type FormData = {
     maxprice?: number
 }
 
-export default function Filter(){
+type Props = {
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    onFilter: Function;
+  };
+
+export default function Filter({onFilter}:Props){
 
     const [formData, setFormData] = useState<FormData>({});
 
@@ -18,8 +23,9 @@ export default function Filter(){
 
     function handleSubmit(event:any){
       event.preventDefault();  
-      console.log(formData.minprice || 0);
-      console.log(formData.maxprice || Number.MAX_VALUE);
+      const min = formData.minprice || 0;
+      const max = formData.maxprice || Number.MAX_VALUE;
+      onFilter(min, max);
     }
 
     return(

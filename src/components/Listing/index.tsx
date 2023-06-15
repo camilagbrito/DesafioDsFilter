@@ -1,20 +1,21 @@
-import CardProduct from '../CardProduct';
-import * as productService from '../../services/product-service'
 import './style.css';
+import { ProductDTO } from '../models/product';
 
-export default function Listing(){
+type Props = {
+    product?:ProductDTO;
+}
+
+export default function Listing({product}:Props){
+
+    
     return(
         <main>
-            <section className='card-products-config'>
-                <div className='card-products container'>
-                    {
-                        productService.findByPrice(0, 5000).map(
-                            product => <CardProduct key={product.id} product={product} />
-                            )
-                    }
+            <section>
+                <div className='card-item'>
+                        <h2>{product?.name}</h2>
+                        <h3>R$ {product?.price.toFixed(2)}</h3>
                 </div>
             </section>
         </main>
-
     );
 }
